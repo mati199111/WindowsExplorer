@@ -1,0 +1,9 @@
+C:\Users\m_rac\source\repos\Lista_plikow_WPF\Lista_plikow_WPF\bin\Debug\Lista_plikow_WPF.exe.config
+C:\Users\m_rac\source\repos\Lista_plikow_WPF\Lista_plikow_WPF\bin\Debug\Lista_plikow_WPF.exe
+C:\Users\m_rac\source\repos\Lista_plikow_WPF\Lista_plikow_WPF\bin\Debug\Lista_plikow_WPF.pdb
+C:\Users\m_rac\source\repos\Lista_plikow_WPF\Lista_plikow_WPF\obj\Debug\Lista_plikow_WPF.csprojAssemblyReference.cache
+C:\Users\m_rac\source\repos\Lista_plikow_WPF\Lista_plikow_WPF\obj\Debug\Lista_plikow_WPF.Form1.resources
+C:\Users\m_rac\source\repos\Lista_plikow_WPF\Lista_plikow_WPF\obj\Debug\Lista_plikow_WPF.Properties.Resources.resources
+C:\Users\m_rac\source\repos\Lista_plikow_WPF\Lista_plikow_WPF\obj\Debug\Lista_plikow_WPF.csproj.GenerateResource.cache
+C:\Users\m_rac\source\repos\Lista_plikow_WPF\Lista_plikow_WPF\obj\Debug\Lista_plikow_WPF.exe
+C:\Users\m_rac\source\repos\Lista_plikow_WPF\Lista_plikow_WPF\obj\Debug\Lista_plikow_WPF.pdb
