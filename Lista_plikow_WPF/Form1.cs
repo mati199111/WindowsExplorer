@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Lista_plikow_WPF
 {
@@ -11,6 +12,7 @@ namespace Lista_plikow_WPF
         {
             InitializeComponent();
             label1.Text = ("Witaj w przeglądarce plików, aby rozpocząć kliknij start :>");
+
         }
         #endregion
         #region przycisk start folderbrowser
@@ -24,7 +26,7 @@ namespace Lista_plikow_WPF
                 string[] files2 = Directory.GetFiles(FBD.SelectedPath, "*.lnk", SearchOption.TopDirectoryOnly);
                 string[] dirs = Directory.GetDirectories(FBD.SelectedPath);
 
-                foreach(string file in files)
+                foreach (string file in files)
                 {
                     listBox1.Items.Add(Path.GetFileName(file));
                 }
@@ -54,13 +56,13 @@ namespace Lista_plikow_WPF
             string[] file = Directory.GetFiles(dir, "*.exe", SearchOption.TopDirectoryOnly);
             string[] file2 = Directory.GetFiles(dir, "*.lnk", SearchOption.TopDirectoryOnly);
 
-            foreach(string first in file)
+            foreach (string first in file)
             {
-                listBox1.Items.Add(Path.GetFileName(first));
+                listBox1.Items.Add(first);
             }
             foreach (string second in file2)
             {
-                listBox1.Items.Add(Path.GetFileName(second));
+                listBox1.Items.Add(second);
             }
         }
         #endregion
@@ -80,7 +82,7 @@ namespace Lista_plikow_WPF
         private void button5_Click(object sender, EventArgs e)
         {
             notifyIcon1.Visible = true;
-            notifyIcon1.Text = "Schowaj";
+            notifyIcon1.Text = "Eksplorator plików";
             notifyIcon1.Icon = this.Icon;
             notifyIcon1.ContextMenuStrip = contextMenuStrip1;
             this.ShowInTaskbar = false;
@@ -97,6 +99,23 @@ namespace Lista_plikow_WPF
         private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        #endregion
+        #region mouseclick
+        private void listBox1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+           int index = this.listBox1.IndexFromPoint(e.Location);
+            //MessageBox.Show(e.Location.ToString());
+            MessageBox.Show(index.ToString());
+            //FileStream
+        }
+        #endregion
+        #region klasa dodatkowa
+        class FileModel
+        {
+            
         }
         #endregion
     }

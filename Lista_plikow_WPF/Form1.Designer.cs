@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -67,6 +68,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(758, 276);
             this.listBox1.TabIndex = 2;
+            this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             // 
             // button2
             // 
@@ -144,19 +146,19 @@
             this.przywróćToolStripMenuItem,
             this.zamknijToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 80);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(138, 52);
             // 
             // przywróćToolStripMenuItem
             // 
             this.przywróćToolStripMenuItem.Name = "przywróćToolStripMenuItem";
-            this.przywróćToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.przywróćToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
             this.przywróćToolStripMenuItem.Text = "Przywróć";
             this.przywróćToolStripMenuItem.Click += new System.EventHandler(this.przywróćToolStripMenuItem_Click);
             // 
             // zamknijToolStripMenuItem
             // 
             this.zamknijToolStripMenuItem.Name = "zamknijToolStripMenuItem";
-            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
             this.zamknijToolStripMenuItem.Text = "Zamknij";
             this.zamknijToolStripMenuItem.Click += new System.EventHandler(this.zamknijToolStripMenuItem_Click);
             // 
@@ -173,6 +175,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(800, 500);
             this.Name = "Form1";
             this.Text = "Lista_Plików";
